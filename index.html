@@ -22,14 +22,14 @@
         <section class="container" >
             <div class=" text-center mt-5">
                 <div>
-                  <div class="row mb- mx-4">
+                  <div class="row mb-4 mx-4">
                     <div class="col-4 col-sm-3">
                       <div class="card" style="width: 18rem;">
                           <img src="images/newFile.avif" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Thiago Silva</h5>
                             <p class="card-text fw-bold">50 goals . 100 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Lionel Messi</h5>
                             <p class="card-text fw-bold">369 goals . 200 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Casimero</h5>
                             <p class="card-text fw-bold">120 goals . 90 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                           <div class="card-body">
                             <h5 class="card-titlefw-bold">Marcelo</h5>
                             <p class="card-text fw-bold"> 50 goals . 70 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Ronaldinho</h5>
                             <p class="card-text fw-bold">300 goals . 200 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Roben</h5>
                             <p class="card-text fw-bold"> 200 goals . 100 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Benzema</h5>
                             <p class="card-text fw-bold">250 goals . 150 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Ronaldo</h5>
                             <p class="card-text fw-bold"> 400 goals . 300 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                           <div class="card-body">
                             <h5 class="card-title fw-bold">Neymar.jr</h5>
                             <p class="card-text fw-bold"> 290 goals . 200 Assist</p>
-                            <a href="#" class="btn btn-primary px-5">Select</a>
+                            <button class="btn btn-primary px-5" onclick="selectPlayer (this)" >Select</button>
                           </div>
                         </div>
                     </div>
@@ -123,10 +123,13 @@
         </section>
         <section class=" mt-5">
             <div class="d-flex">
-                <div class="favorite bg-black">
-                  <h2 class=" fw-bold text-white">Favorite Five</h2>
-                  <div>
-      
+                <div class="favorite bg-info">
+                  <h2 class=" fw-bold text-black">Favorite Five <span id="total-player">  0</span></h2>
+                  <div id="Player-List">
+                    <!-- <tr>
+                      <th>1</th>
+                      <td>Jacob</td> 
+                    </tr> -->
                   </div>
                 </div>
               
@@ -158,7 +161,7 @@
           </footer>
     <!-- footer section -->
     
-
+          <script src="js/select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
