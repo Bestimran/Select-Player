@@ -18,3 +18,17 @@ h1{
     
 
 }
+.container{
+    margin-left: 600px;
+}
+.budget{
+    margin-left:50px;
+    padding:50px;
+}
+
+.favorite{
+    margin-left: 300px;
+    padding: 50px;
+}
+
+
