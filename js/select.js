@@ -19,10 +19,7 @@ if(playerArray.length === 6){
     alert('there is no more space to put Player');
     return;
 }
-
-
-
-    
+   
 }
 
 function selectPlayer (element){

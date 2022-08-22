@@ -20,6 +20,8 @@ perPlayerCost.innerText = previousValue;
 const TotalExpense = TotalPlayerCost + previousValue;
 perPlayerCost.innerText = TotalExpense;
 
+inputField.value = '';
+
 })
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
@@ -27,5 +29,26 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     const inputManagerString = inputManager.value;
     const inputValue = parseFloat(inputManagerString);
     inputManager.value = inputValue;
-  
+
+    inputManager.value = '';
+
+    const inputCoach = document.getElementById('input-coach');
+    const inputCoachString = inputCoach.value;
+    const inputCoachValue = parseFloat(inputCoachString);
+    inputCoach.value = inputCoachValue;
+
+    inputCoach.value = '';
+
+    const totalCost = inputValue + inputCoachValue;
+
+    const totalBudget = document.getElementById('Total-budget');
+    const totalBudgetString = totalBudget.innerText;
+    const total = parseFloat(totalBudgetString);
+    totalBudget.innerText = total;
+
+    const totalValue = totalCost + total;
+    totalBudget.innerText = totalValue;
+
+    
+      
 })
