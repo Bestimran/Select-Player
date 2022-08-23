@@ -10,14 +10,16 @@ function display(select){
         
         tr.innerHTML = ` 
         <th>${i + 1}</th>
-        <td>${name}</td> `;
+        <td>${name}</td>`;
 
         playerList.appendChild(tr);
+        
 }
 
 if(playerArray.length === 6){
-    alert('there is no more space to put Player');
+    alert('there is not enough space');
     return;
+    
 }
    
 }
